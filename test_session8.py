@@ -81,20 +81,21 @@ def test_fibonacci():
     k()
     assert k() == 2
 
-'''
-#8
-def test_function_calling_single_dict():
-    c = session8.counter(session8.add)
+
+#9
+def test_function_singe_dict_call():
+    c = session8.function_counter( session8.add )
     c(3,4)
     c(5,2)
     c(6,8)
-    c=session8.counter(session8.mul)
+    c = session8.counter( session8.mul )
     c(3,4)
-    c=session8.counter(session8.div)
-    k=c(12,3)
+    c = session8.counter( session8.div )
+    k = c( 12,3 )
     assert k == {'add': 3, 'div': 1, 'mul': 1}
 
 
+'''
 #9
 def test_function_calling_sep_dict():
     c=session8.counter2(session8.add,session8.dicA)
