@@ -9,9 +9,7 @@
 
 &nbsp;
 
-``` html
-    check_fn_docs, __doc__, next_fibo_number, mul, add, div, function_counter
-```
+     check_fn_docs, __doc__, next_fibo_number, mul, add, div, function_counter
 
 &nbsp;
 - Write a test file, that tests all of the functions mentioned above and also includes the other basic ones. 
@@ -45,12 +43,12 @@
 | 2 | RREADME Words Counts | Pass |
 | 3 | README proper description | Pass |
 | 4 | RREADME Formatting | Pass |
-| 5 | Proper identation and  PEP8 guidelines | Pass |
-| 6 | Function name not defined with capital letters | Pass |
-| 7 | test_docstring_length | Pass |
-| 8 | test_fibonacci | Pass |
-| 9 | test_function_calling_single_dict | Pass |
-| 10 | test_function_calling_sep_dict | Pass | 
+| 5 | Function name not defined with capital letters | Pass |
+| 6 | fourspace | Pass |
+| 7 | test docstring length | Pass |
+| 8 |  test fibonacci | Pass |
+| 9 | check count functional called | Pass |
+| 10 | test_function_called user wise | Pass | 
 
 ---
 
