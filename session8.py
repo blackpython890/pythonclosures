@@ -97,16 +97,3 @@ def function_counter(func):
         count += 1
         func_count_dic[func.__name__] = count
     return start_count
-
-
-
-add_count = function_counter(add)
-mul_count = function_counter(mul)
-div_count = function_counter(div)
-
-
-add_count()
-c = add(19,2)
-print(c)
-add_count()
-add_count()
