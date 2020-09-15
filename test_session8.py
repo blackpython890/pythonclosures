@@ -32,7 +32,7 @@ def test_readme_words_counts():
     readme.close()
     assert len(readme_words) >= 100 , "Kindly define README properly"
 
-'''
+
 #4 Readme Proper Description
 def test_readme_proper_desscription():
     READMELOOKSGOOD = True
@@ -44,7 +44,6 @@ def test_readme_proper_desscription():
             READMELOOKSGOOD = False
             pass
     assert READMELOOKSGOOD == True , "You have not defined all functions/classes in README.md"
-'''
 
 
 #5 function name had caps letter
@@ -79,7 +78,7 @@ def test_fibonacci():
 
 
 #9
-def test_function_singe_dict_call():
+def test_function_single_dict_call():
     c = session8.function_counter( session8.add )
     c()
     c()
