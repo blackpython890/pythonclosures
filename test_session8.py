@@ -88,9 +88,9 @@ def test_function_singe_dict_call():
     c()
     c()
     c()
-    c = session8.counter( session8.mul )
+    c = session8.function_counter( session8.mul )
     c()
-    c = session8.counter( session8.div )
+    c = session8.function_counter( session8.div )
     k = c()
     assert k == {'add': 3, 'div': 1, 'mul': 1}
 
