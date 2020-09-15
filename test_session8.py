@@ -32,7 +32,7 @@ def test_readme_words_counts():
     readme.close()
     assert len(readme_words) >= 100 , "Kindly define README properly"
 
-
+'''
 #4 Readme Proper Description
 def test_readme_proper_desscription():
     READMELOOKSGOOD = True
@@ -44,7 +44,7 @@ def test_readme_proper_desscription():
             READMELOOKSGOOD = False
             pass
     assert READMELOOKSGOOD == True , "You have not defined all functions/classes in README.md"
-
+'''
 
 
 #5 function name had caps letter
@@ -56,10 +56,6 @@ def test_funcation_had_cap_letter():
 
 #6 PEP8 Guidelines
 def test_fourspace():
-    '''
-    Returns pass if used four spaces for each level of syntactically \
-    significant indenting.
-    '''
     lines = inspect.getsource(session8)
     spaces = re.findall('\n +.', lines)
     for space in spaces:
@@ -91,30 +87,30 @@ def test_function_singe_dict_call():
     c = session8.function_counter( session8.mul )
     c()
     c = session8.function_counter( session8.div )
+    c()
     k = c()
-    assert k == {'add': 3, 'div': 1, 'mul': 1}
+    assert k == {'add': 3, 'div': 2, 'mul': 1}
 
 
-'''
-#9
+
+#10
 def test_function_calling_sep_dict():
-    c=session8.counter2(session8.add,session8.dicA)
-    c(3,6)
-    c(4,5)
-    l=session8.counter2(session8.mul,session8.dicA)
-    l(3,2)
-    l(4,5)
-    x=session8.counter2(session8.div,session8.dicA)
-    x(12,2)
-    x(10,5)
-    c=session8.counter2(session8.add,session8.dicB)
-    c(2,4)
-    c(3,7)
-    c(2,3)
-    l=session8.counter2(session8.mul,session8.dicB)
-    l(3,2)
-    x=session8.counter2(session8.div,session8.dicB)
-    x(12,2)
-    x(10,5)
-    assert session8.dicA == {'add': 2, 'div': 2, 'mul': 2} and session8.dicB == {'add': 3, 'div': 2, 'mul': 1}
-'''
+    c = session8.function_two_dict(session8.add, session8.userA)
+    c()
+    c()
+    l = session8.function_two_dict(session8.mul,session8.userA)
+    l()
+    l()
+    x = session8.function_two_dict(session8.div,session8.userA)
+    x()
+    x()
+    c = session8.function_two_dict(session8.add,session8.userB)
+    c()
+    c()
+    c()
+    l = session8.function_two_dict(session8.mul,session8.userB)
+    l()
+    x = session8.function_two_dict(session8.div,session8.userB)
+    x()
+    x()
+    assert session8.userA == {'add': 2, 'div': 2, 'mul': 2} and session8.userB == {'add': 3, 'div': 2, 'mul': 1}

@@ -1,4 +1,6 @@
 func_count_dic = {}
+userA = {}
+userB = {}
 
 
 def check_fn_docs():
@@ -80,7 +82,7 @@ def div(a, b):
 
 def function_counter(func):
     '''
-    A function  to count the number of times others functions are called and store the same in 
+    A function  to count the number of times others functions are called and store the same in a dictionary 
     Input : a function name
     Output : return nested function
     '''
@@ -95,3 +97,22 @@ def function_counter(func):
         func_count_dic[func.__name__] = count
         return func_count_dic
     return start_count
+
+
+def function_two_dict(func, dic):
+    '''
+    A function  to count the number of times others functions are called and store the same in a dictionary 
+    Input : a function name
+    Output : return nested function
+    '''
+    count = 0
+    def inner():
+        '''
+        nner function of function_counter.
+        An Implementation of closure.
+        '''
+        nonlocal count
+        count += 1
+        dic[func.__name__] = count
+        return dic
+    return inner
