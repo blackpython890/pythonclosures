@@ -96,4 +96,5 @@ def function_counter(func):
         nonlocal count
         count += 1
         func_count_dic[func.__name__] = count
+        return func_count_dic
     return start_count
