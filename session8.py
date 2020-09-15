@@ -9,7 +9,7 @@ def check_fn_docs():
     Output : return nested function.
     '''
     char_count = 50
-    def len_docs_chcek(func):
+    def len_docs_check(func):
         '''
         nested function of check_fn_docs function.
         '''
