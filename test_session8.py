@@ -3,7 +3,6 @@ import re , random, session8
 
 
 README_CONTENT_CHECK_FOR = ['check_fn_docs',
-                            '__doc__',
                             'next_fibo_number',
                             'mul',
                             'add',
