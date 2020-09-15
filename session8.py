@@ -52,7 +52,6 @@ def add(a, b):
     Input: a, b two parameters
     Output: return a+b
     '''
-    add_count()
     return a+b
 
 
@@ -64,7 +63,6 @@ def mul(a, b):
     Input: a, b two parameters
     Output: return a*b
     '''
-    mul_count()
     return a*b
 
 
@@ -77,7 +75,6 @@ def div(a, b):
     Input: a, b two parameters
     Output: return a/b
     '''
-    div_count()
     return a/b
 
 
