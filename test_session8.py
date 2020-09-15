@@ -85,13 +85,13 @@ def test_fibonacci():
 #9
 def test_function_singe_dict_call():
     c = session8.function_counter( session8.add )
-    c(3,4)
-    c(5,2)
-    c(6,8)
+    session8.add(5,9)
+    session8.add(0,6)
+    c()
     c = session8.counter( session8.mul )
-    c(3,4)
+    c()
     c = session8.counter( session8.div )
-    k = c( 12,3 )
+    k = c()
     assert k == {'add': 3, 'div': 1, 'mul': 1}
 
 
