@@ -85,8 +85,8 @@ def test_fibonacci():
 #9
 def test_function_singe_dict_call():
     c = session8.function_counter( session8.add )
-    session8.add(5,9)
-    session8.add(0,6)
+    c()
+    c()
     c()
     c = session8.counter( session8.mul )
     c()
